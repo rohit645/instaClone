@@ -13,9 +13,9 @@
                 <div class="pl-2 pr-2"><strong>475 </strong>followers</div>
                 <div class="pl-2"><strong>430 </strong>following</div>
             </div>
-            <div class="pt-3 font-weight-bold">{{ $user -> username }}</div>
-            <div>Just another Web Developer</div>
-            <div><a href="https://rohit645.github.io/">Portfolio Link</a></div>
+            <div class="pt-3 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+        <div><a href="https://rohit645.github.io/">{{ $user->profile->url }}</a></div>
         </div>
     </div>
     <div class="row pt-4">
